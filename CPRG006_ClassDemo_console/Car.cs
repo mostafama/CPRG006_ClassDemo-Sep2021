@@ -9,7 +9,7 @@ namespace CPRG006_ClassDemo_console
     /// <summary>
     /// This class represent a car
     /// </summary>
-    class Car
+    public class Car
     {
         /// <summary>
         /// Color field
@@ -90,7 +90,7 @@ namespace CPRG006_ClassDemo_console
         public override string ToString()
         {
             return $" * The car color is {Color}, the make is {Make}, " +
-                $"the year is {Year}, is Old: {isOld()}, {Workshop.NeedFix(this)}";
+                $"the year is {Year}, {(isOld() ? "the car is Old" : "the car is New")}, {Workshop.NeedFix(this)}";
         }
 
         /// <summary>

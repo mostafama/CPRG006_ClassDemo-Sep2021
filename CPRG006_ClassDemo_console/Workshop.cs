@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CPRG006_ClassDemo_console
 {
-    static class Workshop
+    public static class Workshop
     {
         public static void Fix(Car car)
         {
@@ -15,6 +15,7 @@ namespace CPRG006_ClassDemo_console
 
         public static string NeedFix(Car cr)
         {
+            //return "It doesn't need fixing";
             return cr.Broken ? "It needs fixing" : "It doesn't need fixing";
         }
     }
